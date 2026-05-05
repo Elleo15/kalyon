@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalyon Restoran — Novxanı, Dəniz Kənarı</title>
+    <meta
+      name="description"
+      content="Kalyon Restoran — Novxanı sahilinin ən gözəl nöqtəsində, dəniz kənarında yerləşən ailə restoranı. Azərbaycan mətbəxi, dəniz məhsulları, xüsusi VIP otaqlar."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant" />
+    <meta
+      property="og:title"
+      content="Kalyon Restoran — Novxanı Dəniz Kənarı"
+    />
+    <meta
+      property="og:description"
+      content="Novxanı sahilinin ən gözəl nöqtəsində, dəniz kənarında yerləşən Kalyon Restoran sizi gözləyir."
+    />
+    <meta property="og:image" content="interyer-8.jpg" />
+    <meta property="og:url" content="https://kalyonrestoran.az" />
+    <meta property="og:site_name" content="Kalyon Restoran" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kalyon Restoran" />
+    <meta
+      name="twitter:description"
+      content="Dəniz kənarında əsl ləzzət təcrübəsi."
+    />
+    <meta name="twitter:image" content="interyer-8.jpg" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-logo">
+        <img src="kalyon-logo.png" alt="Kalyon" class="logo-img" />
+      </a>
+      <div class="nav-center">
+        <a href="#about" class="nav-link" data-i18n="nav_about">Haqqımızda</a>
+        <a href="#menu" class="nav-link" data-i18n="nav_menu">Menyu</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Qalereya</a>
+        <a href="#atmosphere" class="nav-link" data-i18n="nav_atm">Atmosfer</a>
+        <a href="#reservation" class="nav-link" data-i18n="nav_res"
+          >Rezervasiya</a
+        >
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Əlaqə</a>
+      </div>
+      <div class="nav-right">
+        <div class="open-badge" id="openBadge"></div>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="az">AZ</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mob-link" data-i18n="nav_about">Haqqımızda</a>
+      <a href="#menu" class="mob-link" data-i18n="nav_menu">Menyu</a>
+      <a href="#gallery" class="mob-link" data-i18n="nav_gallery">Qalereya</a>
+      <a href="#atmosphere" class="mob-link" data-i18n="nav_atm">Atmosfer</a>
+      <a href="#reservation" class="mob-link" data-i18n="nav_res"
+        >Rezervasiya</a
+      >
+      <a href="#contact" class="mob-link" data-i18n="nav_contact">Əlaqə</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-sub reveal" data-i18n="hero_sub">
+          Novxanı · Dəniz Kənarı
+        </p>
+        <h1 class="hero-title reveal delay-1">KALYON</h1>
+        <p class="hero-tagline reveal delay-2" data-i18n="hero_tagline">
+          Dənizin nəfəsi, süfrənin ləzzəti
+        </p>
+        <div class="hero-btns reveal delay-3">
+          <a href="#reservation" class="btn-primary" data-i18n="hero_btn1"
+            >Rezervasiya Et</a
+          >
+          <a href="#menu" class="btn-outline" data-i18n="hero_btn2"
+            >Menyuya Bax</a
+          >
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-col reveal-left">
+            <span class="section-label" data-i18n="about_label"
+              >Haqqımızda</span
+            >
+            <h2 class="section-title" data-i18n="about_title">
+              Dənizin Nəfəsi,<br />Süfrənin Ləzzəti
+            </h2>
+            <p class="about-text" data-i18n="about_p1">
+              Novxanı sahilinin ən ecazkar nöqtəsində, dalğaların səsi ilə
+              qonaqlarını qarşılayan Kalyon Restoran, hər ziyarəti ömürlük bir
+              xatirəyə çevirir.
+            </p>
+            <p class="about-text" data-i18n="about_p2">
+              Azərbaycan mətbəxinin zəngin ənənələrini müasir qulluq anlayışı
+              ilə birləşdirən Kalyon, ailə süfrəsinin isti mehribanlığını dəniz
+              kənarının sakitliyi ilə qovuşdurur.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-num">10+</span>
+                <span class="stat-lbl" data-i18n="stat1">İl Təcrübə</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num">50+</span>
+                <span class="stat-lbl" data-i18n="stat2">Yemək Növü</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <span class="stat-num">∞</span>
+                <span class="stat-lbl" data-i18n="stat3">Xatirə</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-img-col reveal-right">
+            <div class="about-img-stack">
+              <img
+                src="interyer-8.jpg"
+                alt="Kalyon dəniz görünüşü"
+                class="about-img-main"
+              />
+              <img
+                src="interyer-1.jpg"
+                alt="Kalyon VIP otaq"
+                class="about-img-secondary"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="menu_label">Menyu</span>
+          <h2 class="section-title light" data-i18n="menu_title">
+            Dadlı Seçimlər
+          </h2>
+          <p class="section-desc" data-i18n="menu_desc">
+            Ənənəvi Azərbaycan mətbəxindən tutmuş dəniz məhsullarına qədər geniş
+            çeşid
+          </p>
+        </div>
+        <div class="menu-grid">
+          <div class="menu-card reveal" style="--d: 0.1s">
+            <div class="menu-img-wrap">
+              <img src="meal-5.jpg" alt="Milli yeməklər" />
+            </div>
+            <div class="menu-card-body">
+              <h3 data-i18n="mc1_title">Milli Yeməklər</h3>
+              <p data-i18n="mc1_desc">
+                Dolma, xinkali, piti və daha çox ənənəvi dadlar
+              </p>
+            </div>
+          </div>
+          <div class="menu-card reveal" style="--d: 0.2s">
+            <div class="menu-img-wrap">
+              <img src="meal-3.jpg" alt="Balıq" />
+            </div>
+            <div class="menu-card-body">
+              <h3 data-i18n="mc2_title">Balıq & Dəniz</h3>
+              <p data-i18n="mc2_desc">
+                Təzə tutulmuş balıq və dəniz məhsulları
+              </p>
+            </div>
+          </div>
+          <div class="menu-card reveal" style="--d: 0.3s">
+            <div class="menu-img-wrap">
+              <img src="meal-2.jpg" alt="Pizza" />
+            </div>
+            <div class="menu-card-body">
+              <h3 data-i18n="mc3_title">Pizza & Avropa</h3>
+              <p data-i18n="mc3_desc">
+                Əl ilə hazırlanmış pizzalar və Avropa mətbəxi
+              </p>
+            </div>
+          </div>
+          <div class="menu-card reveal" style="--d: 0.4s">
+            <div class="menu-img-wrap">
+              <img src="meal-4.jpg" alt="Qızartmalar" />
+            </div>
+            <div class="menu-card-body">
+              <h3 data-i18n="mc4_title">İsti Yeməklər</h3>
+              <p data-i18n="mc4_desc">
+                Sacda, torpaq qazanda pişirilmiş dadlar
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-cta reveal">
+          <a
+            href="https://menu.cafetap.az/restaurants/10022/categories"
+            target="_blank"
+            class="btn-primary"
+            data-i18n="menu_btn"
+            >Tam Menyuya Bax</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="gal_label">Qalereya</span>
+          <h2 class="section-title" data-i18n="gal_title">
+            Dadların Görüntüsü
+          </h2>
+        </div>
+        <div class="gallery-masonry">
+          <div class="gal-item reveal" style="--d: 0s">
+            <img src="meal-1.jpg" alt="Xinkali" />
+          </div>
+          <div class="gal-item reveal tall" style="--d: 0.1s">
+            <img src="meal-7.jpg" alt="Kalyon terrace" />
+          </div>
+          <div class="gal-item reveal" style="--d: 0.15s">
+            <img src="meal-6.jpg" alt="Et yeməyi" />
+          </div>
+          <div class="gal-item reveal" style="--d: 0.2s">
+            <img src="meal-8.jpg" alt="Şaşlıq" />
+          </div>
+          <div class="gal-item reveal tall" style="--d: 0.05s">
+            <img src="meal-9.jpg" alt="Toyuq" />
+          </div>
+          <div class="gal-item reveal" style="--d: 0.25s">
+            <img src="meal-3.jpg" alt="Balıq" />
+          </div>
+          <div class="gal-item reveal" style="--d: 0.3s">
+            <img src="meal-4.jpg" alt="Göbələk" />
+          </div>
+          <div class="gal-item reveal" style="--d: 0.1s">
+            <img src="meal-2.jpg" alt="Pizza" />
+          </div>
+          <div class="gal-item reveal" style="--d: 0.2s">
+            <img src="meal-5.jpg" alt="Dolma" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATMOSPHERE -->
+    <section class="section atm-section" id="atmosphere">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="atm_label">Atmosfer</span>
+          <h2 class="section-title light" data-i18n="atm_title">
+            Hər An Xüsusidir
+          </h2>
+          <p class="section-desc" data-i18n="atm_desc">
+            VIP otaqlardan açıq terrasadək — hər zövqə uyğun məkan
+          </p>
+        </div>
+        <div class="atm-grid">
+          <div class="atm-main reveal-left">
+            <img src="interyer-8.jpg" alt="Dəniz görünüşlü salon" />
+            <div class="atm-label" data-i18n="atm_lbl1">
+              Dəniz Görünüşlü Salon
+            </div>
+          </div>
+          <div class="atm-side">
+            <div class="atm-small reveal" style="--d: 0.1s">
+              <img src="interyer-2.jpg" alt="VIP otaq" />
+              <div class="atm-label" data-i18n="atm_lbl2">VIP Otaq</div>
+            </div>
+            <div class="atm-small reveal" style="--d: 0.2s">
+              <img src="interyer-3.jpg" alt="Şadlıq zalı" />
+              <div class="atm-label" data-i18n="atm_lbl3">Şadlıq Zalı</div>
+            </div>
+          </div>
+        </div>
+        <div class="atm-row">
+          <div class="atm-item reveal" style="--d: 0.1s">
+            <img src="interyer-4.jpg" alt="İnteryer 4" />
+          </div>
+          <div class="atm-item reveal" style="--d: 0.15s">
+            <img src="interyer-5.jpg" alt="İnteryer 5" />
+          </div>
+          <div class="atm-item reveal" style="--d: 0.2s">
+            <img src="interyer-6.jpg" alt="İnteryer 6" />
+          </div>
+          <div class="atm-item reveal" style="--d: 0.25s">
+            <img src="interyer-7.jpg" alt="İnteryer 7" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="section res-section" id="reservation">
+      <div class="res-bg">
+        <img src="interyer-8.jpg" alt="bg" />
+        <div class="res-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="res-inner">
+          <div class="section-header reveal">
+            <span class="section-label" data-i18n="res_label">Rezervasiya</span>
+            <h2 class="section-title light" data-i18n="res_title">
+              Masanızı Ayırtın
+            </h2>
+            <p class="section-desc" data-i18n="res_desc">
+              Xüsusi günlər, ailə məclisləri, iş görüşmələri — hər ziyarət üçün
+              hazırıq
+            </p>
+          </div>
+          <form class="res-form reveal" id="resForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="form_name">Ad Soyad</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Adınızı daxil edin"
+                />
+              </div>
+              <div class="form-group">
+                <label data-i18n="form_phone">Telefon</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  placeholder="+994 XX XXX XX XX"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="form_date">Tarix</label>
+                <input type="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label data-i18n="form_time">Saat</label>
+                <input type="time" name="time" min="10:00" max="23:00" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="form_guests">Şəxs Sayı</label>
+                <select name="guests">
+                  <option value="1">1 nəfər</option>
+                  <option value="2">2 nəfər</option>
+                  <option value="3-5" selected>3–5 nəfər</option>
+                  <option value="6-10">6–10 nəfər</option>
+                  <option value="10+">10+ nəfər</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label data-i18n="form_room">Otaq Növü</label>
+                <select name="room">
+                  <option value="general" data-i18n="room_gen">
+                    Ümumi Salon
+                  </option>
+                  <option value="vip" data-i18n="room_vip">VIP Otaq</option>
+                  <option value="sea" data-i18n="room_sea">
+                    Dəniz Görünüşlü
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full">
+              <label data-i18n="form_note">Qeyd (istəyə görə)</label>
+              <textarea
+                name="note"
+                rows="3"
+                placeholder="Xüsusi istəklər, ad günü, allergiyalar..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit" data-i18n="form_submit">
+              Rezervasiya Et
+            </button>
+            <div class="form-success" id="formSuccess" data-i18n="form_success">
+              Rezervasiyanız qəbul edildi! Tezliklə sizinlə əlaqə saxlayacağıq.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="faq_label">FAQ</span>
+          <h2 class="section-title" data-i18n="faq_title">
+            Tez-tez Soruşulanlar
+          </h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              <span data-i18n="faq1q">Rezervasiya mütləqdirmi?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq1a">
+                Xüsusilə həftəsonu günlərindən əvvəl rezervasiya tövsiyə edilir.
+                Telefon və ya saytımız vasitəsilə asanlıqla rezervasiya edə
+                bilərsiniz.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              <span data-i18n="faq2q"
+                >VIP otaqlar üçün minimum sifariş var?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq2a">
+                Bəli, VIP otaqlarımız üçün minimum qonaq sayı tələbi mövcuddur.
+                Ətraflı məlumat üçün bizimlə əlaqə saxlayın.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              <span data-i18n="faq3q">Uşaqlar üçün xüsusi yer var?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq3a">
+                Bəli, ailə restoranımızda uşaqlar üçün xüsusi oturma yerləri və
+                uşaq menyusu mövcuddur.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              <span data-i18n="faq4q">İş saatları nədir?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq4a">
+                Restoranımız hər gün saat 10:00-dan 23:30-a kimi qonaqlarını
+                qəbul edir.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              <span data-i18n="faq5q">Pulsuz dayanacaq var?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq5a">
+                Bəli, restoranımızın yanında geniş pulsuz avtomobil dayanacağı
+                mövcuddur.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q">
+              <span data-i18n="faq6q"
+                >Ad günü və toy mərasimi üçün xüsusi paket var?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <p data-i18n="faq6a">
+                Bəli, xüsusi mərasimlər üçün fərdi paketlər təklif edirik.
+                Dekor, tort, musiqi — hər şeyi bizimlə razılaşdıra bilərsiniz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="contact_label">Əlaqə</span>
+          <h2 class="section-title light" data-i18n="contact_title">
+            Bizimlə Əlaqə
+          </h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal" style="--d: 0.1s">
+            <div class="contact-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+            </div>
+            <h4 data-i18n="cc1_title">Ünvan</h4>
+            <p data-i18n="cc1_val">Novxanı qəsəbəsi,<br />Dəniz kənarı</p>
+          </div>
+          <div class="contact-card reveal" style="--d: 0.2s">
+            <div class="contact-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.22 2.38a2 2 0 012-.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 9.4a16 16 0 006.69 6.69l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                />
+              </svg>
+            </div>
+            <h4 data-i18n="cc2_title">Telefon</h4>
+            <p><a href="tel:+994508606161">+994 50 860 61 61</a></p>
+          </div>
+          <div class="contact-card reveal" style="--d: 0.3s">
+            <div class="contact-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h4 data-i18n="cc3_title">İş Saatları</h4>
+            <p data-i18n="cc3_val">Hər gün<br />10:00 – 23:30</p>
+          </div>
+          <div class="contact-card reveal" style="--d: 0.4s">
+            <div class="contact-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </div>
+            <h4>Instagram</h4>
+            <p>
+              <a href="https://instagram.com/kalyon_restaurant" target="_blank"
+                >@kalyon_restaurant</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.558959195182!2d49.745655076536075!3d40.5734158460873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40309373e92b02eb%3A0x3bcc9f73c720982d!2sKalyon%20Novxan%C4%B1!5e0!3m2!1sen!2slt!4v1777989184385!5m2!1sen!2slt"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <img src="kalyon-logo.png" alt="Kalyon" />
+          <span>KALYON</span>
+        </a>
+        <div class="footer-links">
+          <a href="#about" data-i18n="nav_about">Haqqımızda</a>
+          <a href="#menu" data-i18n="nav_menu">Menyu</a>
+          <a href="#reservation" data-i18n="nav_res">Rezervasiya</a>
+          <a href="#contact" data-i18n="nav_contact">Əlaqə</a>
+        </div>
+        <div class="footer-copy">
+          <p>
+            © 2026 Kalyon Restoran.
+            <span data-i18n="footer_rights">Bütün hüquqlar qorunur.</span>
+          </p>
+          <p class="footer-addr" data-i18n="footer_addr">
+            Novxanı qəsəbəsi, dəniz kənarı, Sumqayıt
+          </p>
+          <p>
+            Developed by
+            <a
+              href="https://elvineyvazov.shop"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--gold); text-decoration: none"
+              >Elvin Eyvazov</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
