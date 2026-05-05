@@ -438,7 +438,11 @@ if (dateInput) {
   dateInput.min = today;
   dateInput.value = today;
 }
-
+function sendToWhatsApp(data) {
+  const phone = '994508606161';
+  const msg = `🍽️ *YENİ REZERVASİYA*\n\n👤 Ad: ${data.name}\n📞 Telefon: ${data.phone}\n📅 Tarix: ${data.date}\n⏰ Saat: ${data.time || 'Qeyd edilməyib'}\n👥 Şəxs: ${data.guests}\n🏠 Otaq: ${data.room}\n📝 Qeyd: ${data.note || 'Yoxdur'}`;
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+}
 resForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -494,17 +498,27 @@ resForm.addEventListener("submit", (e) => {
 
   if (hasError) return;
 
-  const btn = resForm.querySelector(".btn-submit");
-  btn.textContent = "...";
-  btn.disabled = true;
-  setTimeout(() => {
-    formSuccess.classList.add("show");
-    resForm.reset();
-    dateInput.value = new Date().toISOString().split("T")[0];
-    btn.textContent = translations[currentLang].form_submit;
-    btn.disabled = false;
-    setTimeout(() => formSuccess.classList.remove("show"), 5000);
-  }, 1200);
+  const btn = resForm.querySelector('.btn-submit');
+const data = {
+  name: resForm.querySelector('input[name="name"]').value,
+  phone: resForm.querySelector('input[name="phone"]').value,
+  date: resForm.querySelector('input[name="date"]').value,
+  time: resForm.querySelector('input[name="time"]').value,
+  guests: resForm.querySelector('select[name="guests"]').value,
+  room: resForm.querySelector('select[name="room"]').value,
+  note: resForm.querySelector('textarea[name="note"]').value
+};
+btn.textContent = '...';
+btn.disabled = true;
+setTimeout(() => {
+  sendToWhatsApp(data);
+  formSuccess.classList.add('show');
+  resForm.reset();
+  dateInput.value = new Date().toISOString().split('T')[0];
+  btn.textContent = translations[currentLang].form_submit;
+  btn.disabled = false;
+  setTimeout(() => formSuccess.classList.remove('show'), 5000);
+}, 800);
 });
 
 function showFieldError(input, message) {
